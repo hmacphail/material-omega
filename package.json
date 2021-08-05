@@ -1,0 +1,21 @@
+{
+    "name": "material-ermine",
+    "displayName": "Material Ermine",
+    "description": "Just another material theme",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Material Ermine",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Material Ermine-color-theme.json"
+            }
+        ]
+    }
+}
