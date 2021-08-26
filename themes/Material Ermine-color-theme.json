@@ -54,7 +54,7 @@
         // Input Control
         // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_input-control
         "input.background": "#1f1f1f",
-        "input.border": "#03a9f4",
+        "input.border": "#585858",
         "input.foreground": "#d5f2ff",
         "input.placeholderForeground": "#d5f2ff8a",
         "inputValidation.errorBackground": "#2D2B55",
@@ -74,12 +74,12 @@
         "editorLineNumber.foreground": "#424242",
         "editorBracketMatch.border": "#FFCC0050",
         "editorBracketMatch.background": "#212121",
-        "editorLineNumber.activeForeground": "#d5f2ff",
+        "editorLineNumber.activeForeground": "#ACA8a8",
         "editorCursor.foreground": "#03a9f4",
 
         // To see the editor white spaces, enable Toggle Render Whitespace.
         "editorWhitespace.foreground": "#FFFFFF1A",
-        "errorForeground": "#EC3A37F5",
+        "errorForeground": "#FF5370",
 
         // Sidebar
         // https://code.visualstudio.com/docs/getstarted/theme-color-reference#_side-bar
@@ -93,7 +93,7 @@
         "list.inactiveSelectionForeground": "#d5f2ffd7",
         "list.activeSelectionForeground": "#d5f2ff",
         "list.activeSelectionBackground": "#03a8f444",
-        "list.errorForeground": "#FF5252",
+        "list.errorForeground": "#FF5370",
         "list.warningForeground": "#FFC135",
 
         // Tab
@@ -162,9 +162,9 @@
         "terminal.ansiBrightYellow": "#FFC135",
 
         // Git
-        "gitDecoration.deletedResourceForeground": "#FF5252",
-        "gitDecoration.conflictingResourceForeground": "#89DDFF",
-        "gitDecoration.modifiedResourceForeground": "#FFCB6B",
+        "gitDecoration.deletedResourceForeground": "#FF5370",
+        "gitDecoration.conflictingResourceForeground": "#FFCB6B",
+        "gitDecoration.modifiedResourceForeground": "#75BCDA",
         "gitDecoration.untrackedResourceForeground": "#C3E88D",
         "gitDecoration.ignoredResourceForeground": "#84848490",
 
@@ -177,8 +177,8 @@
 
         // Errors and warnings
         // "editorError.border": "#EC3A37F5",
-        "editorError.foreground": "#EC3A37F5",
-        "editorWarning.border": "#FFFFFF00",
+        "editorError.foreground": "#FF5370",
+        // "editorWarning.border": "#FFFFFF00",
         "editorWarning.foreground": "#FAD000"
     },
     "tokenColors": [
@@ -210,7 +210,7 @@
                 "constant.other.php"
             ],
             "settings": {
-                "foreground": "#FFCB6B"
+                "foreground": "#E6DA7C"
             }
         },
         {
@@ -242,9 +242,8 @@
             }
         },
         {
-            "name": "Keyword, Storage",
+            "name": "Storage",
             "scope": [
-                "keyword",
                 "storage.type",
                 "storage.modifier"
             ],
@@ -255,10 +254,12 @@
         {
             "name": "Operator, Misc",
             "scope": [
+                "keyword",
                 "keyword.control",
+                "keyword.operator.arithmetic.js",
                 "constant.other.color",
                 "punctuation",
-                // "meta.tag",
+                "meta.tag",
                 "punctuation.definition.tag",
                 "punctuation.separator.inheritance.php",
                 "punctuation.definition.tag.html",
@@ -270,15 +271,6 @@
             ],
             "settings": {
                 "foreground": "#89DDFF"
-            }
-        },
-        {
-            "name": "Keyword Control",
-            "scope": [
-                "keyword.control"
-            ],
-            "settings": {
-                "fontStyle": "italic"
             }
         },
         {
@@ -296,7 +288,7 @@
             "name": "Function, Special Method",
             "scope": [
                 "entity.name.function",
-                // "meta.function-call",
+                "meta.function-call",
                 "variable.function",
                 "support.function",
                 "keyword.other.special-method"
@@ -334,10 +326,8 @@
             }
         },
         {
-            "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+            "name": "Constant, Function Argument, Tag Attribute, Embedded",
             "scope": [
-                "constant.numeric",
-                "constant.language",
                 "support.constant",
                 "constant.character",
                 "constant.escape",
@@ -359,6 +349,24 @@
             }
         },
         {
+            "name": "Numeric Constant",
+            "scope": [
+                "constant.numeric"
+            ],
+            "settings": {
+              "foreground": "#F3A1D1"
+            }
+        },
+        {
+            "name": "Language Constant",
+            "scope": [
+                "constant.language"
+            ],
+            "settings": {
+                "foreground": "#C792EA",
+            }
+        },
+        {
             "name": "String, Symbols, Inherited Class, Markup Heading",
             "scope": [
                 "string",
@@ -376,7 +384,7 @@
         {
             "name": "Class, Support",
             "scope": [
-                "entity.name",
+                "entity.name.type",
                 "support.type",
                 "support.class",
                 "support.other.namespace.use.php",
@@ -386,7 +394,7 @@
                 "support.type.sys-types"
             ],
             "settings": {
-                "foreground": "#FFCB6B"
+                "foreground": "#E6DA7C"
             }
         },
         {
@@ -429,7 +437,6 @@
                 "variable.language"
             ],
             "settings": {
-                "fontStyle": "italic",
                 "foreground": "#FF5370"
             }
         },
@@ -439,7 +446,6 @@
                 "entity.name.method.js"
             ],
             "settings": {
-                "fontStyle": "italic",
                 "foreground": "#82AAFF"
             }
         },
@@ -459,7 +465,6 @@
                 "entity.other.attribute-name"
             ],
             "settings": {
-                "fontStyle": "italic",
                 "foreground": "#C792EA"
             }
         },
@@ -469,7 +474,7 @@
                 "entity.other.attribute-name.class"
             ],
             "settings": {
-                "foreground": "#FFCB6B"
+                "foreground": "#E6DA7C"
             }
         },
         {
@@ -573,7 +578,7 @@
                 "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
             ],
             "settings": {
-                "foreground": "#FFCB6B"
+                "foreground": "#E6DA7C"
             }
         },
         {
@@ -766,7 +771,7 @@
                 "constant.other.reference.link.markdown"
             ],
             "settings": {
-                "foreground": "#FFCB6B"
+                "foreground": "#E6DA7C"
             }
         },
         {
