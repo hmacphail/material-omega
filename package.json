@@ -1,6 +1,6 @@
 {
-    "name": "material-ermine",
-    "displayName": "Material Ermine",
+    "name": "material-omega",
+    "displayName": "Material Omega",
     "description": "Just another material theme",
     "version": "0.0.1",
     "engines": {
@@ -12,9 +12,9 @@
     "contributes": {
         "themes": [
             {
-                "label": "Material Ermine",
+                "label": "Material Omega",
                 "uiTheme": "vs-dark",
-                "path": "./themes/Material Ermine-color-theme.json"
+                "path": "./themes/Material Omega-color-theme.json"
             }
         ]
     }
