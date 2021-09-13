@@ -2,6 +2,7 @@
     "name": "material-omega",
     "displayName": "Material Omega",
     "description": "Just another material theme",
+    "publisher": "hmacphail",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.58.0"
